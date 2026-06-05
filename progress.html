@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>29Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Application Header and Tabbed Navigation -->
+  <div class="top-navigation-ribbon">
+    <div class="left-nav-group">
+      <button class="icon-menu-btn">≡</button>
+      
+      <nav class="navigation-tabs">
+        <a href="index.html" class="tab-trigger">Tasks</a>
+        <a href="tools.html" class="tab-trigger">Timer</a>
+        <a href="progress.html" class="tab-trigger active-capsule">Performance</a>
+      </nav>
+    </div>
+    
+    <div class="right-utility-group">
+      <div id="live-clock" class="mono-clock">00:00:00 AM</div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Sidebar Menu -->
+  <div id="app-sidebar" class="sidebar-drawer hidden-sidebar">
+    <div class="sidebar-header">
+      <h3>Navigation Menu</h3>
+      <button id="close-sidebar-btn" class="close-node">✕</button>
+    </div>
+    <nav class="sidebar-links">
+      <a href="index.html" class="side-item">📋 Tasks</a>
+      <a href="tools.html" class="side-item">⏱️ Timer</a>
+      <a href="progress.html" class="side-item">📊 Performance</a>
+    </nav>
+  </div>
+  <div id="sidebar-overlay" class="drawer-overlay hidden-overlay"></div>
+
+  <!-- Main Content Layout Container -->
+  <div class="app-container">
+    <main class="viewport-workspace">
+      <section class="widget-box">
+        <h3>Performance</h3>
+        
+        <!-- Interactive Date Filtering Option -->
+        <div class="calendar-filter-row">
+          <label for="analysis-date-picker">Date:</label>
+          <input type="date" id="analysis-date-picker">
+        </div>
+
+        <div class="progress-columns">
+          <div class="dial-card">
+            <div class="circle-progress" id="dial-daily" style="--percent: 0;">
+              <span class="value-text" id="txt-daily">0%</span>
+            </div>
+            <span class="dial-tag">Daily Target</span>
+          </div>
+
+          <div class="dial-card">
+            <div class="circle-progress" id="dial-weekly" style="--percent: 0;">
+              <span class="value-text" id="txt-weekly">0%</span>
+            </div>
+            <span class="dial-tag">Weekly Review</span>
+          </div>
+
+          <div class="dial-card">
+            <div class="circle-progress" id="dial-monthly" style="--percent: 0;">
+              <span class="value-text" id="txt-monthly">0%</span>
+            </div>
+            <span class="dial-tag">Monthly review</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
