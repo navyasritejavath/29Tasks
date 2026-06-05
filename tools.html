@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>29Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Application Header and Tabbed Navigation -->
+  <div class="top-navigation-ribbon">
+    <div class="left-nav-group">
+      <button class="icon-menu-btn">≡</button>
+      
+      <nav class="navigation-tabs">
+        <a href="index.html" class="tab-trigger">Tasks</a>
+        <a href="tools.html" class="tab-trigger active-capsule">Timer</a>
+        <a href="progress.html" class="tab-trigger">Performance</a>
+      </nav>
+    </div>
+    
+    <div class="right-utility-group">
+      <div id="live-clock" class="mono-clock">00:00:00 AM</div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Sidebar Menu -->
+  <div id="app-sidebar" class="sidebar-drawer hidden-sidebar">
+    <div class="sidebar-header">
+      <h3>Navigation Menu</h3>
+      <button id="close-sidebar-btn" class="close-node">✕</button>
+    </div>
+    <nav class="sidebar-links">
+      <a href="index.html" class="side-item">📋 Tasks</a>
+      <a href="tools.html" class="side-item">⏱️ Timer</a>
+      <a href="progress.html" class="side-item">📊 Performance</a>
+    </nav>
+  </div>
+  <div id="sidebar-overlay" class="drawer-overlay hidden-overlay"></div>
+
+  <!-- Main Content Layout Container -->
+  <div class="app-container">
+    <main class="viewport-workspace split-timing-grid">
+      
+      <!-- Stopwatch Card -->
+      <div class="timer-subcard">
+        <h4>Stopwatch</h4>
+        <div id="stopwatch-label" class="mono-digits">00:00:00</div>
+        <div class="tool-controls">
+          <button id="sw-start" class="btn dark-btn">Start</button>
+          <button id="sw-stop" class="btn alert-btn hidden">Stop</button>
+          <button id="sw-reset" class="btn light-btn" disabled>Reset</button>
+        </div>
+      </div>
+
+      <!-- Countdown Card -->
+      <div class="timer-subcard">
+        <h4>Timer</h4>
+        <div id="countdown-label" class="mono-digits">00:00</div>
+        
+        <div class="timer-setting-controls" id="timer-inputs-wrapper">
+          <input type="number" id="input-minutes" min="0" max="99" value="10" placeholder="Min">
+          <span class="colon-separator">:</span>
+          <input type="number" id="input-seconds" min="0" max="59" value="00" placeholder="Sec">
+        </div>
+
+        <div class="tool-controls spec-margin">
+          <button id="tm-start" class="btn dark-btn">Run</button>
+          <button id="tm-stop" class="btn alert-btn hidden">Pause</button>
+          <button id="tm-reset" class="btn light-btn">Reset</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
