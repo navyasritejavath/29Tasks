@@ -119,3 +119,7 @@ That’s all I wanted this project to be.
 
 
 <img width="1466" height="840" alt="Image" src="https://github.com/user-attachments/assets/2837471f-68dc-45e1-988d-0ccf2a798ac0" />
+
+<img width="1465" height="839" alt="Image" src="https://github.com/user-attachments/assets/bb724d13-42fb-462c-88ae-7175fd4cb8f2" />
+
+<img width="1470" height="837" alt="Image" src="https://github.com/user-attachments/assets/bc7ecd84-f9c9-4775-9628-c032f292a31c" />
