@@ -118,3 +118,4 @@ It’s a small tool, but if used regularly, it can actually help you build disci
 That’s all I wanted this project to be.
 
 
+<img width="1466" height="840" alt="Image" src="https://github.com/user-attachments/assets/2837471f-68dc-45e1-988d-0ccf2a798ac0" />
